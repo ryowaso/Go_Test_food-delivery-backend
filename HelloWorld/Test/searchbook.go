@@ -46,6 +46,7 @@ func main() {
 				manPrice = price
 			}
 		}
+
 		c := head
 		for c != nil {
 			if c.Price == manPrice {
