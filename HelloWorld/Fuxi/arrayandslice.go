@@ -118,4 +118,28 @@ func main() {
 		Go 的 map 键必须是可比较的类型，即支持 == 和 != 操作。通常使用 string、int、float64
 		等基本类型作为键，而 slice、map 和 func 不能作为键。
 	*/
+
+	/*
+				在 Go 语言中，无效标识符是指不能用作变量名、函数名、类型名等的名称。以下是一些常见的无效标识符情况
+				1. 使用关键字作为标识符
+				Go 有一组保留关键字，不能作为标识符使用，例如：
+				var if int      // ❌ 错误：`if` 是关键字
+				var return string // ❌ 错误：`return` 是关键字
+				Go 的保留关键字包括：
+				break    default      func    interface  select
+				case     defer        go      map        struct
+				chan     else         goto    package    switch
+				const    fallthrough  if      range      type
+				continue for          import  return     var
+			    2. 标识符格式不合法
+			Go 中标识符的合法格式是：
+
+			只能由 字母（A-Z，a-z）、数字（0-9） 和 下划线 _ 组成；
+
+			不能以数字开头；
+
+			*不能包含空格或特殊字符（如 @、#、%、 等）**。
+		使用未定义或非法的 Unicode 字符
+		Go 语言支持 Unicode，但以下情况会被视为无效标识符
+	*/
 }
