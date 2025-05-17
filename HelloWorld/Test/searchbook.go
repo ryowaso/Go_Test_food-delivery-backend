@@ -23,7 +23,7 @@ func main() {
 		var head *Book
 		var tail *Book
 
-		manPrice := -1.0
+		maxPrice := -1.0
 
 		for j := 0; j < n; j++ {
 			var isbn string
@@ -42,14 +42,14 @@ func main() {
 				tail = book
 			}
 
-			if price > manPrice {
-				manPrice = price
+			if price > maxPrice {
+				maxPrice = price
 			}
 		}
 
 		c := head
 		for c != nil {
-			if c.Price == manPrice {
+			if c.Price == maxPrice {
 				fmt.Printf("%s %s %.2f\n", c.ISBN, c.Name, c.Price)
 			}
 			c = c.Next
