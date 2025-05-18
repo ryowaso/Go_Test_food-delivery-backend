@@ -9,7 +9,7 @@ func Fibonacci(n int) int {
 	return Fibonacci(n-1) + Fibonacci(n-2)
 }
 func main() {
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 10; i++ {
 		fmt.Printf("%d\t", Fibonacci(i))
 	}
 }

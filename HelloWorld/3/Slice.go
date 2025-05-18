@@ -34,7 +34,7 @@ func main() {
 	//fmt.Println("The value of slice2 is ", slice2) //
 
 	var slice1 []int = []int{1, 2, 3, 4, 5}
-	var slice2 []int = make([]int, 4)
+	var slice2 []int = []int{3, 4, 5, 6}
 	fmt.Println("The value of slice1", slice1)
 	copy(slice1, slice2)
 	fmt.Println("The value of slice1 is ", slice1)
