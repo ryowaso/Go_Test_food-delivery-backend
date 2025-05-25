@@ -14,6 +14,6 @@ func fibonacci(n int) []int {
 }
 
 func main() {
-	n := 5
+	n := 4
 	fmt.Println(fibonacci(n))
 }

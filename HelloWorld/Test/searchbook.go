@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 type Book struct {
@@ -28,10 +27,10 @@ func main() {
 		for j := 0; j < n; j++ {
 			var isbn string
 			var name string
-			var pricestr string
+			var pricestr float64
 			fmt.Scan(&isbn, &name, &pricestr)
 
-			price, _ := strconv.ParseFloat(pricestr, 64)
+			price := pricestr
 
 			book := &Book{ISBN: isbn, Name: name, Price: price}
 			if head == nil {
