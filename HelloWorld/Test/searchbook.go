@@ -27,10 +27,8 @@ func main() {
 		for j := 0; j < n; j++ {
 			var isbn string
 			var name string
-			var pricestr float64
-			fmt.Scan(&isbn, &name, &pricestr)
-
-			price := pricestr
+			var price float64
+			fmt.Scan(&isbn, &name, &price)
 
 			book := &Book{ISBN: isbn, Name: name, Price: price}
 			if head == nil {
