@@ -30,7 +30,9 @@ func main() {
 			var price float64
 			fmt.Scan(&isbn, &name, &price)
 
-			book := &Book{ISBN: isbn, Name: name, Price: price}
+			book := &Book{ISBN: isbn,
+				Name:  name,
+				Price: price}
 
 			if head == nil {
 				head = book
@@ -48,7 +50,10 @@ func main() {
 		c := head
 		for c != nil {
 			if c.Price == maxPrice {
-				fmt.Printf("%s %s %.2f\n", c.ISBN, c.Name, c.Price)
+				fmt.Printf("%s %s %.2f\n",
+					c.ISBN,
+					c.Name,
+					c.Price)
 			}
 			c = c.Next
 		}
