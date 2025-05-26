@@ -31,6 +31,7 @@ func main() {
 			fmt.Scan(&isbn, &name, &price)
 
 			book := &Book{ISBN: isbn, Name: name, Price: price}
+
 			if head == nil {
 				head = book
 				tail = book
