@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var n int = 10
-	fmt.Printf("前%d个fb数是%d\n", n, fb(n))
+	var n int
+	fmt.Scan(&n)
+	f := fb(n)
+	fmt.Printf("前%d个fb数是%d\n", n, f)
 
 }
 func fb(n int) []int {
